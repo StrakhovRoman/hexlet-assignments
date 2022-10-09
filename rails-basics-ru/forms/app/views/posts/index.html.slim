@@ -1,0 +1,9 @@
+h1
+  | Posts
+= link_to 'New post', new_post_path
+hr
+- @posts.each do |post|
+  p= link_to post.title, post_path(post.id)
+  small
+  i= post.created_at.strftime('%H:%m %d.%m.%Y')
+  hr

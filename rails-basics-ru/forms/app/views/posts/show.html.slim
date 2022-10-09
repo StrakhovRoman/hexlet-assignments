@@ -1,0 +1,9 @@
+h1 = @post.title
+p = @post.body
+p = @post.summary
+p = @post.published
+small i = @post.created_at.in_time_zone('Moscow').strftime('%H:%m %d.%m.%Y')
+hr
+p = link_to 'Edit', edit_post_path(@post)
+p = button_to 'Delete', post_path(@post), method: :delete, data: { confirm: 'Are you sure?' }
+p = link_to 'Back', root_path

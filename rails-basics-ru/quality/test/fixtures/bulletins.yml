@@ -1,0 +1,11 @@
+one:
+  id: 1
+  title: Bulletin
+  body: description one
+  published: true
+
+two:
+  id: 2
+  title: Bulletin
+  body: description two
+  published: false
